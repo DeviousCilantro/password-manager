@@ -145,7 +145,7 @@ fn main() -> Result<(), Box<dyn Error>> {
 
     loop {
 
-    write(&stream, "\n[R]egister / [A]uthenticate / [E]xit? (r/a/e) ");
+        write(&stream, "\n[R]egister / [A]uthenticate / [E]xit? (r/a/e) ");
 
         let choice = read(&stream)?;
         match choice.as_str() {
